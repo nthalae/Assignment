@@ -7,7 +7,7 @@ def circle_area(radius : Number) -> Number:
     """
     calculate the area of a circle from radius
     @param radius: the circle's radius
-    @return: the parameter (same unit as the radius)
+    @return: the parameter (unit^2 from the radius)
     >>> circle_area(7)
     154
     """
