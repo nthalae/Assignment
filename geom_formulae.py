@@ -53,3 +53,27 @@ def rectangle_area(length : Number, width : Number) -> Number:
     return length*width
 print (rectangle_area(11, 7))
 
+def sphere_volume(radius : Number) -> Number:
+    """
+    calculate the volume of a cone fom aradius
+    :param radius: radius of the cone
+    :return: parameter (unit^3 from the radius)
+    >>> sphere_volume(3)
+    113.1
+    """
+    return (4*pi*radius*radius*radius)/3
+print (sphere_volume(3))
+
+def pyramid_volume(length : Number, width : Number, height : Number) -> Number:
+    """
+    calculate the volume of a pyramid from the length, width, and height.
+    :param length: length of the pyramid
+    :param width: width of the pyramid
+    :param height: height of the pyramid
+    :return:parameter (unit^3 from length)
+    >>> pyramid_volume(8, 3, 7)
+    56
+    """
+    return (length*width*height/3)
+print (pyramid_volume(8, 3, 7))
+
