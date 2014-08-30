@@ -21,7 +21,7 @@ def cone_area(radius : Number, height : Number) -> Number:
     :param radius: the circle's radius
     :param height: the cicle's height
     :return: the parameters (unit^2 from radius)
-    >>> cone_area(3, 4)
+    >>> cone_volume(3, 4)
     75.4
     """
     return (pi*radius*radius)+(pi*radius*(sqrt(radius*radius+height*height)))
@@ -76,4 +76,32 @@ def pyramid_volume(length : Number, width : Number, height : Number) -> Number:
     """
     return (length*width*height/3)
 print (pyramid_volume(8, 3, 7))
+
+
+def pyramid_area(length : Number, width : Number, height: Number) -> Number:
+    """
+    calculate the area of a pyramid from the length, width, and height.
+    :param length: length of the pyramid
+    :param width: width of the pyramid
+    :param height: height of the pyramid
+    :return: parameter (unit^2 from length)
+    >>> pyramid_area (8, 3, 7)
+    105.46
+    """
+    return (length*width)+length*sqrt(width*width/4)+width*sqrt((length*length/4)+(height*height))
+print (pyramid_area(8, 3, 7))
+
+
+def ellipsoid_volume (radius1 : Number, radius2 : Number, radius3 : Number) -> Number:
+    """
+    calculate the volume of an ellipsoid from its radius1, radius2 and radius3)
+    :param radius1: radius1 of the ellipsoid
+    :param radius2: radius2 of the ellipsoid
+    :param radius3: radius3 of the ellipsoid
+    :return: parameter (unit^3 from radius1)
+    >>> ellipsoid_volume (6, 3, 7)
+    528
+    """
+    return 4*pi*radius1*radius2*radius3/3
+print (ellipsoid_volume(6, 3, 7))
 
